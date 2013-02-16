@@ -289,6 +289,10 @@ declare module Breeze {
         attachEntity(entity: Entity, entityState?: EntityStateSymbol): Entity;
         clear(): void;
         createEmptyCopy(): EntityManager;
+        //from docs
+        //createEntity ( typeName , [initialValues=null] , [entityState=EntityState.Added] )
+        createEntity(typeName: string, initialValues?: Object, entityState?: EntityStateSymbol): Entity;
+
         detachEntity(entity: Entity): bool;
 
         executeQuery(query: string, callback?: ExecuteQuerySuccessCallback, errorCallback?: ExecuteQueryErrorCallback): Promise;
