@@ -732,3 +732,6 @@ declare module Breeze {
         message?: string;
     }
 }
+//ambient
+
+declare var breeze: Breeze;
